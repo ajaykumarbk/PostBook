@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 import './Register.css';
 
@@ -61,6 +61,9 @@ const Register: React.FC = () => {
         </div>
         <button type="submit">Register</button>
       </form>
+      <p className="login-link">
+        If you have an account, <Link to="/login">login</Link>
+      </p>
     </div>
   );
 };
